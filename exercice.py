@@ -31,19 +31,19 @@ def bills(value):
 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
 	while value != 0:
 		if value >= 20:
-			# Enlever tout les 20s possible
+			# Enlever tous les 20s possible
 			twenties = value // 20
 			value %= 20
 		elif value >= 10:
-			# Enlever tout les 20s possible
+			# Enlever tous les 20s possible
 			tens = value // 10
 			value %= 10
 		elif value >= 5:
-			# Enlever tout les 20s possible
+			# Enlever tous les 20s possible
 			fives = value // 5
 			value %= 5
 		elif value >= 1:
-			# Enlever tout les 20s possible
+			# Enlever tous les 20s possible
 			ones = value // 1
 			value %= 1
 	return twenties, tens, fives, ones
