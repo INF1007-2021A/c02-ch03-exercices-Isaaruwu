@@ -26,19 +26,28 @@ def average(values):
 	average_sum = sum / nbr_element
 	return average_sum
 
+
 def bills(value):
 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
 	while value != 0:
 		if value >= 20:
-			pass
+			# Enlever tout les 20s possible
+			twenties = value // 20
+			value %= 20
 		elif value >= 10:
-			pass
+			# Enlever tout les 20s possible
+			tens = value // 10
+			value %= 10
 		elif value >= 5:
-			pass
+			# Enlever tout les 20s possible
+			fives = value // 5
+			value %= 5
 		elif value >= 1:
-			pass
+			# Enlever tout les 20s possible
+			ones = value // 1
+			value %= 1
+	return twenties, tens, fives, ones
 
-	return (twenties, tens, fives, twos, ones);
 
 if __name__ == "__main__":
 	print(dissipated_power(69, 420))
